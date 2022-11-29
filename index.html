@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luiz Cripa" />
+    <link rel="stylesheet" href="auxiliares/styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+<div id="calc">
+        <h2><input id="cache"  disabled="disabled" > </h2> 
+        <h2><input id="visor" name="visor" placeholder="VISOR"> </h2>
+      
+        <table id="table" >
+            <tr>                  <!--LINHA 01-->
+                <td><button onclick="limpaValores()">C   </button> </td>
+                <td><button onclick='alert("Sem Ação")'>+/- </button> </td>
+                <td><button onclick="porcentual()"   > %  </button> </td>
+                <td><button onclick="deleta()"      >DEL </button> </td> 
+            </tr>
+
+            <tr>                  <!--LINHA 02-->
+                <td><button onclick="atribuiValor(7)"> 7 </button> </td>
+                <td><button onclick="atribuiValor(8)">8 </button> </td>
+                <td><button onclick="atribuiValor(9)">9 </button> </td>
+                <td><button onclick="operacao(2)"> / </button> </td>
+            </tr>
+            
+            <tr>                  <!--LINHA 03-->
+                <td><button onclick="atribuiValor(4)">4 </button> </td>
+                <td><button onclick="atribuiValor(5)">5 </button> </td>
+                <td><button onclick="atribuiValor(6)">6 </button> </td>
+                <td><button onclick="operacao(1)"> x </button> </td>
+            </tr>
+            
+            <tr>                  <!--LINHA 04-->
+                <td><button onclick="atribuiValor(1)">1 </button> </td>
+                <td><button onclick="atribuiValor(2)">2 </button> </td>
+                <td><button onclick="atribuiValor(3)">3 </button> </td>
+                <td><button onclick="operacao(3)"> - </button> </td>
+                
+            </tr>
+
+            <tr>                  <!--LINHA 05-->
+                <td><button onclick="atribuiValor(0)">0 </button> </td>
+                <td><button onclick="atribuiValor('.')">. </button> </td>
+                <td><button onclick="calcula()">= </button> </td> 
+                <td><button onclick="operacao(4)"> + </button> </td>
+            </tr> 
+        </table>
+    </div>
+
+
+    <script src="auxiliares/script.js"></script>
+    <div id="copyright" >
+        <p href="https://www.linkedin.com/in/luiz-fernando-cripa/" >&copy; 2022 luiz Cripa</p>
+    </div>    
+</body>
+</html>
